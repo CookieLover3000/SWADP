@@ -1,0 +1,9 @@
+# ninja log v5
+6	733	7046270743176846	CMakeFiles/opdracht1.dir/main.cpp.obj	e826a00316ac68f9
+18	731	7046270743182030	CMakeFiles/opdracht1.dir/Robot.cpp.obj	b8641782e630c175
+3	187	7046270990305017	CMakeFiles/opdracht1.dir/Positie.cpp.obj	f434fcf3e242ba4
+188	740	7046270995774055	opdracht1.exe	f028d614bba0df83
+2	381	7046323515655809	build.ninja	8b165993b73f2153
+16	775	7046323524089494	CMakeFiles/opdracht1.dir/Robot.cpp.obj	b8641782e630c175
+4	776	7046323524099518	CMakeFiles/opdracht1.dir/main.cpp.obj	e826a00316ac68f9
+776	1064	7046323526895555	opdracht1.exe	f028d614bba0df83
