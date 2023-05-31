@@ -10,7 +10,7 @@ class Motor
 {
 public:
     virtual ~Motor() = default;
-    virtual Sensor sensor() = 0;
+    virtual Sensor* sensor() = 0;
     virtual void start() = 0;
     virtual void stop() = 0;
 };

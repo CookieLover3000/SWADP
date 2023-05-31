@@ -6,12 +6,13 @@
 #define OPDRACHT4_MTWOIMP_H
 
 #include "Mtwo.h"
+using namespace std;
 class Sensor;
-class MoneIMP : public Mtwo
+class MtwoIMP : public Mtwo
 {
 public:
-    MoneIMP(Sensor*);
-    virtual Sensor sensor();
+    MtwoIMP(Sensor*);
+    virtual Sensor* sensor();
     virtual void start();
     virtual void stop();
 private:
