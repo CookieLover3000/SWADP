@@ -5,7 +5,7 @@
 #define OPDRACHT4_MONEIMP_H
 
 #include "Mone.h"
-using namespace std;
+
 class Sensor;
 class MoneIMP : public Mone
 {

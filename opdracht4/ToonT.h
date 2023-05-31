@@ -7,9 +7,9 @@
 #include "Observer.h"
 class ToonT : public Observer
 {
-    ToonT(Subject &n);
+public:
+    ToonT(Subject *n);
     virtual void update();
 };
-
 
 #endif //OPDRACHT4_TOONT_H

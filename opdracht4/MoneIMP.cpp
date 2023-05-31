@@ -5,18 +5,21 @@
 #include "Sensor.h"
 #include <iostream>
 
-MoneIMP::MoneIMP(Sensor* s):S(s){
-
+MoneIMP::MoneIMP(Sensor* s):S(s)
+{
 }
 
-Sensor* MoneIMP::sensor() {
+Sensor* MoneIMP::sensor()
+{
     return S;
 }
 
-void MoneIMP::start() {
-    cout << "Motor 1 aan" << endl;
+void MoneIMP::start()
+{
+    std::cout << "Motor 1 aan" << std::endl;
 }
 
-void MoneIMP::stop() {
-    cout << "Motor 1 uit" << endl;
+void MoneIMP::stop()
+{
+    std::cout << "Motor 1 uit" << std::endl;
 }

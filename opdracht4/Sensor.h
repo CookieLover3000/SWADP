@@ -9,7 +9,7 @@
 class Sensor : public Subject
 {
 public:
-    virtual void read(int) = 0;
+    virtual void read(int a) = 0;
     virtual int temperatuur() = 0;
 };
 

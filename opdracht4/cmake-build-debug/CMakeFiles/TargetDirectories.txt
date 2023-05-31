@@ -1,3 +1,0 @@
-C:/Users/iwanv/Documents/school/swadp/opdracht4/cmake-build-debug/CMakeFiles/opdracht4.dir
-C:/Users/iwanv/Documents/school/swadp/opdracht4/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/iwanv/Documents/school/swadp/opdracht4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

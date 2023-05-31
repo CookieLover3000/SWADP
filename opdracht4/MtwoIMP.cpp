@@ -5,8 +5,8 @@
 #include "Sensor.h"
 #include <iostream>
 
-MtwoIMP::MtwoIMP(Sensor* s):S(s){
-
+MtwoIMP::MtwoIMP(Sensor* s):S(s)
+{
 }
 
 Sensor* MtwoIMP::sensor() {
@@ -14,9 +14,9 @@ Sensor* MtwoIMP::sensor() {
 }
 
 void MtwoIMP::start() {
-    cout << "Motor 2 aan" << endl;
+    std::cout << "Motor 2 aan" << std::endl;
 }
 
 void MtwoIMP::stop() {
-    cout << "Motor 2 uit" << endl;
+    std::cout << "Motor 2 uit" << std::endl;
 }

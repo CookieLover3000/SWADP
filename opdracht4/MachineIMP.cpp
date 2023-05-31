@@ -4,7 +4,6 @@
 #include "MachineIMP.h"
 #include "Motor.h"
 #include "Sensor.h"
-#include <iostream>
 
 MachineIMP::MachineIMP(Motor *a, Motor *b) : mone(a), mtwo(b), T1(0), T2(0)
 {
@@ -23,12 +22,12 @@ Motor* MachineIMP::motor2()
 void MachineIMP::run()
 {
     motor1()->start();
-    T1 = motor1()->sensor()->temperatuur();
-    cout << "Temperatuur Motor 1: " << T1 << endl;
+    T1 = 10;
+    motor1()->sensor()->read(T1);
 
     motor2()->start();
-    T2 = motor2()->sensor()->temperatuur();
-    cout << "Temperatuur Motor 2: " << T2 << endl;
+    T2 = 150;
+    motor2()->sensor()->read(T2);
 }
 
 void MachineIMP::halt()

@@ -3,11 +3,11 @@
 
 #include "ToonT.h"
 #include "Sensor.h"
-
-ToonT::ToonT(Subject &n) : Observer(&n)
+#include <iostream>
+ToonT::ToonT(Subject *n) : Observer(n)
 {
 }
 void ToonT::update()
 {
-    dynamic_cast<Sensor*>(getSubject());
+    std::cout << "Temperatuur: " << dynamic_cast<Sensor*>(getSubject())->temperatuur() << std::endl;
 }

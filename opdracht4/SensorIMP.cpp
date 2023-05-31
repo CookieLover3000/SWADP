@@ -2,7 +2,6 @@
 // Aron Hoogendam 21106029
 
 #include "SensorIMP.h"
-
 SensorIMP::SensorIMP()
 {
     temp = 0;
@@ -11,6 +10,7 @@ SensorIMP::SensorIMP()
 void SensorIMP::read(int a)
 {
     temp = a;
+    notify();
 }
 
 int SensorIMP::temperatuur()

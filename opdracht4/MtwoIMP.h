@@ -5,7 +5,7 @@
 #define OPDRACHT4_MTWOIMP_H
 
 #include "Mtwo.h"
-using namespace std;
+
 class Sensor;
 class MtwoIMP : public Mtwo
 {

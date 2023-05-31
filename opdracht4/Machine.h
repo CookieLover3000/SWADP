@@ -4,8 +4,7 @@
 #ifndef OPDRACHT4_MACHINE_H
 #define OPDRACHT4_MACHINE_H
 
-#include "Motor.h"
-
+class Motor;
 class Machine
 {
 public:

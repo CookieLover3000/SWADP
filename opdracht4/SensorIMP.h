@@ -6,8 +6,6 @@
 
 #include "Sensor.h"
 
-using namespace std;
-
 class SensorIMP : public Sensor
 {
 public:
@@ -15,7 +13,7 @@ public:
     void read(int a) override;
     int temperatuur() override;
 private:
-    int temp;
+    int temp; // als in temperatuur
 };
 
 
