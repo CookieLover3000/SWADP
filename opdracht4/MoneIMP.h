@@ -10,7 +10,7 @@ class Sensor;
 class MoneIMP : public Mone
 {
 public:
-    explicit MoneIMP(Sensor*);
+    MoneIMP(Sensor*);
     virtual Sensor* sensor();
     virtual void start();
     virtual void stop();

@@ -9,6 +9,7 @@ class ToonT : public Observer
 {
 public:
     ToonT(Subject *n);
+    virtual ~ToonT() = default;
     virtual void update();
 };
 
