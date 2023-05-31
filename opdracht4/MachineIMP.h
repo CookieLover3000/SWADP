@@ -12,15 +12,15 @@ class MachineIMP : public Machine
 {
 public:
     MachineIMP(Motor*, Motor*, int, int);
-    virtual Motor motor1();
-    virtual Motor motor2();
+    virtual Motor* motor1();
+    virtual Motor* motor2();
     virtual void run();
     virtual void halt();
 private:
-    int T1;
-    int T2;
     Motor *mone;
     Motor *mtwo;
+    int T1;
+    int T2;
 };
 
 

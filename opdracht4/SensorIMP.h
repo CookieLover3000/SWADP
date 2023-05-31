@@ -7,6 +7,8 @@
 
 #include "Sensor.h"
 
+using namespace std;
+
 class Motor;
 class SensorIMP : public Sensor
 {
