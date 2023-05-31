@@ -1,6 +1,5 @@
-//
-// Created by iwanv on 31-5-2023.
-//
+// Iwan van Oort 20148410
+// Aron Hoogendam 21106029
 
 #ifndef OPDRACHT4_MONEIMP_H
 #define OPDRACHT4_MONEIMP_H
@@ -11,7 +10,7 @@ class Sensor;
 class MoneIMP : public Mone
 {
 public:
-    MoneIMP(Sensor*);
+    explicit MoneIMP(Sensor*);
     virtual Sensor* sensor();
     virtual void start();
     virtual void stop();

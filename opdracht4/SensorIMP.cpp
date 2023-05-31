@@ -1,19 +1,19 @@
-//
-// Created by iwanv on 31-5-2023.
-//
+// Iwan van Oort 20148410
+// Aron Hoogendam 21106029
 
 #include "SensorIMP.h"
-#include <iostream>
 
-SensorIMP::SensorIMP(Motor *m) : M(m)
-{}
-
-void SensorIMP::read()
+SensorIMP::SensorIMP()
 {
-    cout << "Temperatuur: " <<temperatuur() << endl;
+    temp = 0;
+}
+
+void SensorIMP::read(int a)
+{
+    temp = a;
 }
 
 int SensorIMP::temperatuur()
 {
-    return 80;
+    return temp;
 }

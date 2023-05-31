@@ -1,6 +1,5 @@
-//
-// Created by iwanv on 31-5-2023.
-//
+// Iwan van Oort 20148410
+// Aron Hoogendam 21106029
 
 #ifndef OPDRACHT4_MACHINEIMP_H
 #define OPDRACHT4_MACHINEIMP_H
@@ -11,7 +10,7 @@ class Motor;
 class MachineIMP : public Machine
 {
 public:
-    MachineIMP(Motor*, Motor*, int, int);
+    MachineIMP(Motor*, Motor*);
     virtual Motor* motor1();
     virtual Motor* motor2();
     virtual void run();

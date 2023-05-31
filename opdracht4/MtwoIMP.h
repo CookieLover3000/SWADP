@@ -1,6 +1,5 @@
-//
-// Created by iwanv on 31-5-2023.
-//
+// Iwan van Oort 20148410
+// Aron Hoogendam 21106029
 
 #ifndef OPDRACHT4_MTWOIMP_H
 #define OPDRACHT4_MTWOIMP_H

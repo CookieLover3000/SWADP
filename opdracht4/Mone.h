@@ -1,6 +1,5 @@
-//
-// Created by iwanv on 26-5-2023.
-//
+// Iwan van Oort 20148410
+// Aron Hoogendam 21106029
 
 #ifndef OPDRACHT4_MONE_H
 #define OPDRACHT4_MONE_H
@@ -9,6 +8,7 @@
 
 class Mone : public Motor
 {
+    virtual Sensor *sensor() = 0;
     virtual void start() = 0;
     virtual void stop() = 0;
 };

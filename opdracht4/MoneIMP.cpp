@@ -1,8 +1,8 @@
-//
-// Created by iwanv on 31-5-2023.
-//
+// Iwan van Oort 20148410
+// Aron Hoogendam 21106029
 
 #include "MoneIMP.h"
+#include "Sensor.h"
 #include <iostream>
 
 MoneIMP::MoneIMP(Sensor* s):S(s){
@@ -14,9 +14,9 @@ Sensor* MoneIMP::sensor() {
 }
 
 void MoneIMP::start() {
-    cout << "Moter 1 aan";
+    cout << "Motor 1 aan" << endl;
 }
 
 void MoneIMP::stop() {
-    cout << "Moter 1 uit";
+    cout << "Motor 1 uit" << endl;
 }

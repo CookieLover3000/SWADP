@@ -1,11 +1,12 @@
-//
-// Created by iwanv on 31-5-2023.
-//
+// Iwan van Oort 20148410
+// Aron Hoogendam 21106029
 
 #include "MachineIMP.h"
 #include "Motor.h"
+#include "Sensor.h"
+#include <iostream>
 
-MachineIMP::MachineIMP(Motor *a, Motor *b, int c, int d) : mone(a), mtwo(b), T1(c), T2(d)
+MachineIMP::MachineIMP(Motor *a, Motor *b) : mone(a), mtwo(b), T1(0), T2(0)
 {
 }
 
@@ -21,15 +22,17 @@ Motor* MachineIMP::motor2()
 
 void MachineIMP::run()
 {
-    mone->start();
-    T1 = mone->sensor()->temperatuur();
+    motor1()->start();
+    T1 = motor1()->sensor()->temperatuur();
+    cout << "Temperatuur Motor 1: " << T1 << endl;
 
-    mtwo->start();
-    T2 = mtwo->sensor()->temperatuur();
+    motor2()->start();
+    T2 = motor2()->sensor()->temperatuur();
+    cout << "Temperatuur Motor 2: " << T2 << endl;
 }
 
 void MachineIMP::halt()
 {
-    mone->stop();
-    mtwo->stop();
+    motor1()->stop();
+    motor2()->stop();
 }

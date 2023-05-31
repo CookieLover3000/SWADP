@@ -8,8 +8,8 @@
 
 class Sensor : public Subject
 {
-//    virtual ~Sensor() = default;
-    virtual void read() = 0;
+public:
+    virtual void read(int) = 0;
     virtual int temperatuur() = 0;
 };
 
