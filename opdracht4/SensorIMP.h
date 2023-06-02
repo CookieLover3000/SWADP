@@ -5,14 +5,13 @@
 #define OPDRACHT4_SENSORIMP_H
 
 #include "Sensor.h"
-#include "Observer.h"
 
-class SensorIMP : public Sensor, public Observer
+class SensorIMP : public Sensor, public Subject
 {
 public:
     SensorIMP();
-    void read(int a) override;
-    int temperatuur() override;
+    virtual void read(int a);
+    virtual int temperatuur();
 private:
     int temp; // als in temperatuur
 };

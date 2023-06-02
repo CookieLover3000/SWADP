@@ -8,6 +8,8 @@
 
 class Mone : public Motor
 {
+public:
+    virtual ~Mone() {}
     virtual Sensor *sensor() = 0;
     virtual void start() = 0;
     virtual void stop() = 0;

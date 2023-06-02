@@ -9,8 +9,8 @@
 
 int main()
 {
-    Sensor *t1= new SensorIMP;
-    Sensor *t2 = new SensorIMP;
+    SensorIMP *t1= new SensorIMP;
+    SensorIMP *t2 = new SensorIMP;
     ToonT a(t1);
     ToonT b(t2);
     Mone* Mone = new MoneIMP(t1);

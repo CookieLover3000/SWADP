@@ -17,8 +17,8 @@ protected:
     Subject* getSubject () const { return S; }
 public:
     Observer (Subject* s);
-    virtual ~Observer ( );
-    virtual void update ( ) = 0;
+    virtual ~Observer ();
+    virtual void update () = 0;
 };
 
 class Subject

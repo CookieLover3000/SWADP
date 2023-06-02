@@ -4,10 +4,12 @@
 #ifndef OPDRACHT4_SENSOR_H
 #define OPDRACHT4_SENSOR_H
 
+#include "Observer.h"
 
 class Sensor
 {
 public:
+    virtual ~Sensor(){}
     virtual void read(int a) = 0;
     virtual int temperatuur() = 0;
 };
