@@ -5,8 +5,9 @@
 #define OPDRACHT4_SENSORIMP_H
 
 #include "Sensor.h"
+#include "Observer.h"
 
-class SensorIMP : public Sensor
+class SensorIMP : public Sensor, public Observer
 {
 public:
     SensorIMP();
