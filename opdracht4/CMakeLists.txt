@@ -3,4 +3,4 @@ project(opdracht4)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(opdracht4 main.cpp MachineIMP.cpp MoneIMP.cpp MtwoIMP.cpp Observer.cpp SensorIMP.cpp ToonT.cpp)
+add_executable(opdracht4 main.cpp MachineIMP.cpp MachineIMP.h MoneIMP.cpp MoneIMP.h MtwoIMP.cpp MtwoIMP.h Observer.cpp Observer.h SensorIMP.cpp SensorIMP.h ToonT.cpp ToonT.h)

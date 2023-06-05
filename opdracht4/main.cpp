@@ -19,4 +19,11 @@ int main()
 
     M->run();
     M->halt();
+
+    // ook maar even zorgen dat de memory leaks weg zijn.
+    delete t1;
+    delete t2;
+    delete Mone;
+    delete Mtwo;
+    delete M;
 }

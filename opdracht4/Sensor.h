@@ -4,8 +4,6 @@
 #ifndef OPDRACHT4_SENSOR_H
 #define OPDRACHT4_SENSOR_H
 
-#include "Observer.h"
-
 class Sensor
 {
 public:

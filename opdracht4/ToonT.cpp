@@ -2,12 +2,15 @@
 // Aron Hoogendam 21106029
 
 #include "ToonT.h"
-#include "Sensor.h"
+#include "SensorIMP.h"
 #include <iostream>
+
 ToonT::ToonT(Subject *n) : Observer(n)
 {
 }
 void ToonT::update()
 {
-    std::cout << "Temperatuur: " << dynamic_cast<Sensor*>(getSubject())->temperatuur() << std::endl;
+    SensorIMP* a = dynamic_cast<SensorIMP*>(getSubject());
+    if(a != nullptr) //
+        std::cout << "Temperatuur: " << a->temperatuur() << std::endl;
 }
